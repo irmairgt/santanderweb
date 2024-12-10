@@ -1,0 +1,66 @@
+/* Reset básico de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c8dfe2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo de la sección de Redes Sociales */
+.social-media-section {
+    text-align: center;
+    padding: 40px 25px;
+    background-color: #a7bfc7;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Título en inglés */
+.social-media-section h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Contenedor de iconos */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo de los iconos de redes sociales */
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efecto de hover para los iconos */
+.social-icon:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra alrededor del icono */
+}
+
+/* Cambio de fondo de la sección al pasar el cursor */
+.social-media-section:hover {
+    background-color: #688391; /* Fondo oscuro */
+    transform: translateY(-10px); /* Hace que la sección se eleve al pasar el mouse */
+}

@@ -1,0 +1,180 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #c8dfe2; /* Light background */
+    color: #333; /* Dark text */
+}
+
+/* Container */
+.weather-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #c8dfe2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Header */
+.weather-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.weather-header h1 {
+    font-size: 2.5rem;
+    color: #333; /* Dark gray title */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #87a1ab; /* Underline effect */
+    display: inline-block;
+    margin-top:20px;
+}
+
+.weather-header p {
+    font-size: 1.2rem;
+    color: black; /* Subtle gray */
+    margin-top:20px;
+}
+
+/* Current Weather */
+.current-weather {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.current-weather h2 {
+    font-size: 1.8rem;
+    color: black; /* Deep gray-blue */
+    margin-bottom: 15px;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.weather-icon {
+    width: 400px;
+    height: 300px;
+}
+
+.details {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Seasonal Climate */
+.seasonal-climate h2 {
+    font-size: 1.8rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seasons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.season {
+    flex: 1 1 calc(50% - 20px);
+    padding: 20px;
+    background-color: #f9fafb; /* Light gray */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.season:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.season h3 {
+    font-size: 1.5rem;
+    color: #688391; /* Bright blue */
+    margin-bottom: 10px;
+}
+
+.season p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black; /* Subtle dark gray */
+}
+
+/* Footer */
+.weather-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.weather-footer p {
+    font-size: 1.1rem;
+    color: black;
+}
+/* Footer */
+.main-footer {
+    background-color: rgba(0, 0, 0, 0.7);  /* Bright blue-gray background */
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    /* Light border on top */
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline-block;
+}
+
+.footer-links a {
+    color: white; /* White text for links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f9fafb; /* Subtle hover effect */
+}
+/* Asegurar que el contenido principal empuje el footer al fondo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* La página siempre ocupa la altura completa */
+    margin: 0;
+}
+
+.weather-container {
+    flex: 1; /* Toma todo el espacio restante entre la barra de navegación y el footer */
+}
+
+

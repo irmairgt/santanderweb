@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Concerts - Santander</title>
+        <link rel="stylesheet" href="../css/Placesofinterest_style.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Barra flotante -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../Tourism/logo1.png" alt="Logo Santander">
+            </div>
+            <ul>
+                <li class="nav-item">
+                    <a href="../Indexprueba.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Tourism</a>
+                    <div class="sub-menu">
+                        <a href="../Tourism/Placesofinterest.html">Places of Interest</a>
+                        <a href="../Tourism/beaches.html">Beaches</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Culture and Heritage</a>
+                    <div class="sub-menu">
+                        <a href="../Culture_heritage/history.html">Cantabria's History</a>
+                        <a href="../Culture_heritage/museums.html">Museums</a>
+                        <a href="../Culture_heritage/celebrations.html">Celebrations</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Gastronomy</a>
+                    <div class="sub-menu">
+                        <a href="../gastronomy/typicaldishes.html">Typical Dishes</a>
+                        <a href="../gastronomy/bars.html">Bars and Restaurants</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Leisure</a>
+                    <div class="sub-menu">
+                        <a href="../leisure/nightlife.html">Nightlife</a>
+                        <a href="../leisure/festivals.html">Festivals</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Practical Information</a>
+                    <div class="sub-menu">
+                        <a href="../practical_information/accomodation.html">Accomodation</a>
+                        <a href="../practical_information/weather.html">Weather</a>
+                        <a href="../practical_information/calendar.html">Calendar</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../news/news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Contacts</a>
+                    <div class="sub-menu">
+                        <a href="../contacts/info.html">Info</a>
+                        <a href="../contacts/socialmedia.html">Social Media</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- IMAGE SLIDER START -->
+
+        <div class="slider-frame">
+            <div class="slide-images">
+
+                <!-- radio buttons for manual sliding -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="img-container first">
+                    <img src="../leisure/img/carrusel1.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="../leisure/img/carrusel2.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="../leisure/img/carrusel3.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="../leisure/img/carrusel4.jpg">
+                </div>
+
+                <!-- image slider end -->
+
+                <!-- automatic navigation start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- automatic navigation end -->
+
+            </div>
+
+            <!-- manual navigation start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation end -->
+        </div>
+
+        <!-- IMAGE SLIDER END -->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function() {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+        <div id="mainwrap">
+            <h2 id="highlights">Dance with the music</h2>
+            <p><b>Santander</b> becomes a hub of music, good vibes, and dancing every summer! Its festivals and concerts are absolute must-sees, and here’s the full menu to make sure you don’t miss a beat. Put on your sunglasses, pack your bag, and let’s go! 🌟</p>
+            <ul id="imgList">
+                <li class="imgcont">
+                    <a href="../leisure/negrita.html">
+                        <img src="../leisure/img/negrita.jpg" width="183" height="86" alt="Example image"><br>
+                        Negrita
+                    </a>
+                </li>
+                <li class="imgcont">
+                    <a href="../leisure/rbf.html">
+                        <img src="../leisure/img/rbf.jpg" width="163" height="86" alt="Example image"><br>
+                        Reggaeton Beach Festival (RBF)
+                    </a>
+                </li>
+                <li class="imgcont">
+                    <a href="../leisure/magvivo.html">
+                        <img src="../leisure/img/magvivo.jpg" width="153" height="86" alt="Example image"><br>
+                        Magdalena en Vivo
+                    </a>
+                </li>
+                <li class="imgcont">
+                    <a href="../leisure/hocky.html">
+                        <img src="../leisure/img/hocky.jpg" width="193" height="86" alt="Example image"><br>
+                        Hocky Poky Festival
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </body>
+</html>

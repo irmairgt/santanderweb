@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #a7bfc7;
+    font-family: 'Karla', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+
+* {
+    font-family: 'Karla', sans-serif;
+}
+
+/* Contenedor General */
+.row {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columnas */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    margin-top: 70px;
+    padding: 20px;
+    background-color: #c8dfe2; /* Fondo del cuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    border: 1px solid #ccc; /* Borde */
+    max-width: 800px;
+    width: 70%;
+    margin: 70px auto; /* Centra horizontalmente y agrega margen superior */
+    clear: both;
+}
+
+.sectionHome{
+    max-height: 100px;
+}
+
+
+/* Estilo del texto */
+#sidebar {
+    margin-bottom: 20px; /* Espacio entre el texto y la imagen */
+    text-align: justify;
+}
+
+#sidebar strong {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #222;
+    text-align: center;
+}
+
+#sidebar p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Botones */
+.btn {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btns {
+    border: 3px solid black;
+    width: 45%;
+    font-size: 18px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+a {
+    text-decoration: none; /* Elimina el subrayado si lo tiene */
+    color: black; /* O el color que desees para el enlace */
+}
+
+/* Estilo para los enlaces visitados */
+a:visited {
+    color:#a7bfc7 ; /* Mantiene el color de los enlaces visitados igual */
+}
+.btns:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Imagen */
+#article {
+    text-align: center; /* Centrar la imagen */
+}
+
+#article img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

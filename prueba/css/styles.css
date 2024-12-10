@@ -1,0 +1,235 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra flotante */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: top 0.3s ease-in-out; /* Transición suave al hacer scroll */
+}
+
+/* Logo */
+.navbar .logo img {
+    height: 40px; /* Ajusta el tamaño de la imagen */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Lista de los elementos de la barra de navegación */
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+}
+
+/* Estilo de los elementos de la barra */
+.navbar .nav-item {
+    position: relative;
+}
+
+.navbar .nav-item a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón */
+.navbar .nav-item:hover > a {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #f0f0f0;
+}
+
+/* Submenú oculto por defecto */
+.navbar .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Mostrar submenú cuando se pasa el ratón sobre el item */
+.navbar .nav-item:hover .sub-menu {
+    display: block;
+}
+
+/* Estilo de los enlaces dentro del submenú */
+.navbar .sub-menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color en el submenú al pasar el ratón */
+.navbar .sub-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Contenedor con imagen de fondo */
+.background-container {
+    background-image: url('../img/fondo.jpg'); /* Ruta de la imagen de fondo guardada localmente */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Hace que el fondo ocupe toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Para que el contenido no se superponga a la barra */
+    text-align: center;
+}
+
+/* Estilo del título centrado */
+.background-container h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo del párrafo debajo del título */
+.background-container p {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 300;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Texto adicional debajo de la imagen */
+.text-below-image {
+    background-color: #a7bfc7;
+    padding: 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo para el texto debajo de la imagen */
+.text-below-image p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Barra flotante fija al hacer scroll */
+body {
+    padding-top: 60px; /* Para evitar que la barra se superponga al contenido */
+}
+
+/* Footer */
+.main-footer {
+    /*background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 700px;
+    padding: 35px;
+    */
+    background-color: rgba(0, 0, 0, 0.7);
+    /*position:fixed;
+    bottom:0px;
+    left:0px;
+    width: 100%;
+    height: 10em;*/
+    padding-bottom: 2px;
+    
+}
+.footer-logo {
+    max-height: 100px;
+    margin-bottom: 20px;
+    display: block; /* Asegura que se comporte como un elemento bloque para alinearlo */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex; /* Aplica flexbox al contenedor principal */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+   
+}
+
+.footer-socials {
+    font-size: 1.1rem;
+    display: flex; /* Flexbox para centrar los enlaces dentro del contenedor */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    gap: 10px; /* Espaciado uniforme entre los enlaces */
+    
+}
+
+.footer-socials a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0; /* Remueve márgenes para evitar conflicto con gap */
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #f0f0f0;
+}
+
+/* Estilo para el contenedor del video */
+.video-container {
+    display: flex;
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;      /* Centrado vertical */
+    width: 100%;
+    height: 60vh;             /* Altura de la sección (puedes ajustarlo a tu preferencia) */
+    max-width: 600px;         /* Tamaño máximo del video */
+    margin: 40px auto;        /* Espacio superior e inferior, y centrado horizontal */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;       /* Bordes redondeados opcionales */
+}
+
+/* Ajuste de tamaño para el video */
+.video-container iframe {
+    width: 100%;
+    height: 350px;  /* Establece la altura más pequeña */
+    border: none;
+}
+body {
+    background-color: #a7bfc7;  /* Color amarillo de fondo */
+    font-family: Arial, sans-serif;  /* Tipografía general */
+    color: #333;  /* Color del texto */
+}
+
+.map-container {
+    margin: 20px auto;
+    width: fit-content; /* Ajusta al tamaño del contenido */
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden; /* Redondea los bordes con el iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Ajuste del iframe (mapa) */
+.map-container iframe {
+    display: block;
+    width: 1000px;
+    height: 400px;
+    border: none; /* Elimina los bordes extra */
+}

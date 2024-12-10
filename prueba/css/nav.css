@@ -1,0 +1,86 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra flotante */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: top 0.3s ease-in-out; /* Transición suave al hacer scroll */
+}
+
+/* Logo */
+.navbar .logo img {
+    height: 40px; /* Ajusta el tamaño de la imagen */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Lista de los elementos de la barra de navegación */
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+}
+
+/* Estilo de los elementos de la barra */
+.navbar .nav-item {
+    position: relative;
+}
+
+.navbar .nav-item a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón */
+.navbar .nav-item:hover > a {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #f0f0f0;
+}
+
+/* Submenú oculto por defecto */
+.navbar .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Mostrar submenú cuando se pasa el ratón sobre el item */
+.navbar .nav-item:hover .sub-menu {
+    display: block;
+}
+
+/* Estilo de los enlaces dentro del submenú */
+.navbar .sub-menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color en el submenú al pasar el ratón */
+.navbar .sub-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}

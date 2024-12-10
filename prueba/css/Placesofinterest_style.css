@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*height: 100vh;*/
+    display: fix;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #F54FE0;*/
+    background-color: #a7bfc7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sectionBeaches{
+    max-height: 200px;
+}
+
+/* ---- SLIDER ---- */
+
+.slider-frame{ /*slider*/
+    width: 60%;
+    height: 450px;
+    margin-left: 20%;
+    margin-right: 20%;
+    overflow: hidden;
+    margin-top: 55px;
+    margin-bottom: 17%;
+    box-shadow: 10px 10px 9px black;
+    
+}
+
+.slide-images{ /*slides*/
+    width: 500%;
+    height: 450px;
+    display: flex;
+}
+
+.slide-images input{
+    display: none;
+}
+
+.img-container{ 
+    width: 20%;
+    transition: 4s;;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+/*---- manual navigation ----*/
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+/* ---- MANUAL SLIDE END ---- */
+
+/* ---- AUTOMATIC SLIDE ----*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 410px;
+}
+
+.navigation-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: black;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: black;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: black;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #a7bfc7;
+}
+
+/* ---- AUTOMATIC SLIDE END ---- */
+
+#monum{
+    font-size: 50px;
+    font-family: 'Karla', sans-serif;
+}
+
+a{
+
+    color:black;
+}
+
+
+#mainwrap{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.4;
+    font-size: 88%;
+    color: #000;
+    width: 80%;
+    overflow: hidden;
+    margin: 0 0 0 10%;
+    text-align: center;
+    display: inline-block;
+}
+
+
+#imgList{
+    font-family: 'Karla', sans-serif;
+    line-height: 1.4;
+    font-size: 100%;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    float: left;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    left: 50%;
+    margin-top: 5%;
+}
+
+.imgcont{
+    font-family: 'Karla', sans-serif;
+    line-height: 1.4;
+    font-size: 100%;
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+    left: -50%;
+}
+
+
+.imgcont img{
+    font-family: 'Karla', sans-serif;
+    line-height: 1.4;
+    font-size: 95%;
+    list-style: none;
+    width: 183px;
+    height: 200px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.imgcont:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#buy{
+    font-family: 'Karla', sans-serif;
+    border: 2px solid black;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+#buy:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+/* Estilo para el texto "Highlights" */
+#monum {
+    font-size: 50px;
+    font-family: 'Karla', sans-serif;
+    text-align: center; /* Centra el texto */
+    margin-top: 50px; /* Espacio superior */
+    margin-bottom: 30px; /* Espacio inferior */
+    color: #333; /* Color del texto, ajustable según el diseño */
+}
+/* Espaciado superior para el carrusel de fotos */
+.slider-frame {
+    margin-top: 80px; /* Espacio superior ajustable */
+}
+p{
+    margin-top: 10%;
+    font-size:18px;
+    margin-top: 50px;
+}
+h3{
+    font-size: 2.5rem;
+    color: #333; /* Dark gray title */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #87a1ab; /* Underline effect */
+    display: inline-block;
+}
+#highlights {
+    font-size: 2.5rem; /* Tamaño del texto */
+    text-align: center; /* Centra el título */
+    color: #2f4f4f; /* Color gris oscuro */
+    margin-top: 70px; /* Espacio superior */
+    text-transform: uppercase; /* Letras en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    border-bottom: 2px solid #87a1ab; /* Línea debajo del texto */
+    display: inline-block;
+}
+#hola{
+    margin-bottom: 1000px;
+}

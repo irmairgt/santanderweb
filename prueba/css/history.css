@@ -1,0 +1,84 @@
+/* Espaciado general para la columna de texto */
+.text-column {
+    margin: 20px; /* Espaciado alrededor de la columna de texto */
+}
+
+/* Estilo para el título principal (h1) */
+.text-column h1 {
+    font-size: 2.5rem; /* Tamaño del título principal */
+    font-weight: bold; /* Negrita para destacar */
+    color: #333; /* Color del título */
+    margin-bottom: 30px; /* Espaciado debajo del título */
+    text-align: center; /* Opcional: Centrar el título */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #87a1ab; /* Underline effect */
+    display: inline-block;
+}
+
+/* Estilo para los subtítulos (h2) */
+.text-item h2 {
+    font-size: 1.8rem; /* Tamaño del subtítulo */
+    color: #555; /* Color del subtítulo */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilo para el párrafo */
+.text-item p {
+    font-size: 1rem; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #555; /* Color del texto */
+    text-align: justify; /* Justificación del texto */
+}
+
+
+/* Estilo para el contenedor principal */
+.container {
+    display: flex; /* Crea una distribución en filas (horizontal) */
+    justify-content: space-between; /* Espacio entre las columnas */
+    align-items: flex-start; /* Alinea al inicio verticalmente */
+    margin: 20px; /* Espaciado alrededor del contenedor */
+    gap: 20px; /* Espaciado entre las columnas */
+}
+
+/* Columna de texto */
+.text-column {
+    flex: 1; /* Ocupa proporcionalmente más espacio si es necesario */
+    margin-right: 20px; /* Espacio entre texto e imágenes */
+}
+
+.text-item {
+    margin-bottom: 20px; /* Espaciado entre secciones de texto */
+}
+
+.text-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px; /* Espacio entre el título y el texto */
+    color: #333; /* Color del título */
+}
+
+.text-item p {
+    font-size: 1rem;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    text-align: justify; /* Justifica el texto */
+    color: #555; /* Color del texto */
+}
+
+/* Columna de imágenes */
+.image-column {
+    margin-top: 10px;
+    flex: 0.5; /* Ocupa menos espacio que el texto */
+    display: flex;
+    flex-direction: column; /* Coloca las imágenes en una columna */
+    gap: 15px; /* Espaciado entre imágenes */
+}
+
+.image-column img {
+    width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
+    max-width: 300px; /* Ancho máximo para que no se estiren demasiado */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para las imágenes */
+    object-fit: cover; /* Ajusta las imágenes sin distorsionarlas */
+    margin: 0 auto; /* Centra las imágenes dentro de la columna */
+}

@@ -1,0 +1,82 @@
+/* Reseteo básico de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aseguramos que el diseño esté centrado */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c8dfe2; /* Fondo azul claro */
+}
+
+/* Galería: Contenedor con Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 400px); /* Tres columnas de 400px cada una */
+    gap: 30px; /* Mayor espacio entre imágenes */
+    justify-content: center;
+    margin-top: 15%;
+}
+
+/* Contenedor de la imagen individual */
+.image-container {
+   
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 15px; /* Esquinas redondeadas */
+    width: 400px; /* Mayor tamaño para las imágenes */
+    height: 300px; /* Ajuste proporcional para el alto */
+}
+
+/* Imagen con tamaño fijo y esquinas redondeadas */
+.image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Escala la imagen para llenar el espacio sin deformarla */
+    border-radius: 15px; /* Esquinas redondeadas */
+    transition: opacity 0.3s ease;
+}
+
+/* Capa de superposición con fondo semi-translúcido */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a7bfc7; /* azul oscuro */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Coloca el título y el texto en una columna */
+    opacity: 0; /* Inicialmente oculta */
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px; /* Esquinas redondeadas */
+}
+
+/* Título estilizado */
+.title {
+    font-size: 28px; /* Título más grande */
+    font-weight: bold;
+    margin-bottom: 10px; /* Separación del resto del texto */
+}
+
+/* Efecto al pasar el cursor por encima de la imagen */
+.image-container:hover .image {
+    opacity: 0.5; /* La imagen se vuelve traslúcida */
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* La capa de texto aparece */
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Barra flotante -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../Tourism/logo1.png" alt="Logo Santander">
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a href="../Indexprueba.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Tourism</a>
+                <div class="sub-menu">
+                    <a href="../Tourism/Placesofinterest.html">Places of Interest</a>
+                    <a href="../Tourism/beaches.html">Beaches</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">Culture and Heritage</a>
+                <div class="sub-menu">
+                    <a href="../Culture_heritage/history.html">Cantabria's History</a>
+                    <a href="../Culture_heritage/museums.html">Museums</a>
+                    <a href="../Culture_heritage/celebrations.html">Celebrations</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">Gastronomy</a>
+                <div class="sub-menu">
+                    <a href="../gastronomy/typicaldishes.html">Typical Dishes</a>
+                    <a href="../gastronomy/bars.html">Bars and Restaurants</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">Leisure</a>
+                <div class="sub-menu">
+                    <a href="../leisure/nightlife.html">Nightlife</a>
+                    <a href="../leisure/festivals.html">Festivals</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#">Practical Information</a>
+                <div class="sub-menu">
+                    <a href="../practical_information/accomodation.html">Accomodation</a>
+                    <a href="../practical_information/weather.html">Weather</a>
+                    <a href="../practical_information/calendar.html">Calendar</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="../news/news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Contacts</a>
+                <div class="sub-menu">
+                    <a href="../contacts/info.html">Info</a>
+                    <a href="../contacts/socialmedia.html">Social Media</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form action="/submit-form" method="POST" id="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Your email address">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="captcha">Please type "contact" to verify you are human:</label>
+                <input type="text" id="captcha" name="captcha" required placeholder="Type 'contact'">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

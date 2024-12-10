@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a7bfc7;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Styles */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #c8dfe2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 60px; /* Se agrega margen superior para bajar la sección */
+}
+
+/* Text Section */
+.section .text {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 60%;
+}
+
+.section .text h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #222;
+    text-align: center;
+}
+
+.section .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Images Section */
+.section .images {
+    display: flex;
+    flex-direction: column; /* Imágenes una debajo de otra */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    gap: 20px; /* Espacio entre imágenes */
+    flex: 1; /* Hacer que el bloque de imágenes ocupe un espacio proporcional */
+}
+
+.section .images img {
+    width: 400px; /* Incrementar tamaño de las imágenes */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section .text {
+        margin: 0 0 20px 0;
+        max-width: 100%; /* En pantallas pequeñas, texto ocupa todo el ancho */
+    }
+
+    .section .images {
+        justify-content: center;
+    }
+
+    .section .images img {
+        width: 250px; /* Reducir tamaño de imágenes en pantallas pequeñas */
+    }
+}
+
+/* Contenedor del enlace */
+.info-link-container {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Texto descriptivo */
+.info-link-container p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+/* Estilo del enlace */
+.styled-link {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    background-color: #c8dfe2; /* Color de fondo */
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Hover y focus para el enlace */
+.styled-link:hover,
+.styled-link:focus {
+    background-color: #688391; /* Color de fondo al pasar el cursor */
+    transform: scale(1.05); /* Efecto de zoom sutil */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Efecto de clic */
+.styled-link:active {
+    transform: scale(0.95); /* Reduce ligeramente el tamaño */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+}
+
